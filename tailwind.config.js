@@ -12,8 +12,7 @@ module.exports = {
     utils: true,
     logs: true,
     rtl: false,
-    prefix: "dui-",
+    prefix: "",
     darkTheme: "dark",
   },
-
-}
+};
