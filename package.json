@@ -1,0 +1,17 @@
+{
+  "name": "traveltip",
+  "version": "1.0.0",
+  "description": "Landing page for traveltip website",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+  },
+  "author": "ch33kaboo",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.7"
+  },
+  "dependencies": {
+    "daisyui": "^2.22.0"
+  }
+}
