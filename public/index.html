@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="dark">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,30 +32,106 @@
     </header>
 
     <main>
-      <section id="hero"></section>
+      <div>
+        <!-- for the bg image -->
+        <img src="https://placeimg.com/1000/480/nature" alt="" />
+      </div>
 
-      <h1>Who Are We?</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint atque enim
-        ullam quo eos porro perferendis soluta unde reiciendis, veniam
-        voluptatibus sequi laudantium accusamus reprehenderit nisi, repudiandae
-        quasi! Ea, fuga.
-      </p>
+      <!-- logo part -->
+      <div>
+        <img
+          class="invert filter"
+          src="../images/logo/ttip-removebg.png"
+          alt=""
+        />
+      </div>
 
-      <img
-        class="opacity-20 blur-sm"
-        src="https://i.giphy.com/media/vlwVZMjk5ivdYwkDWT/giphy.webp"
-        onerror="this.onerror=null;this.src='https://i.giphy.com/vlwVZMjk5ivdYwkDWT.gif';"
-        alt="globe spinning"
-      />
+      <section id="hero">
+        <h1>Who Are We?</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint atque
+          enim ullam quo eos porro perferendis soluta unde reiciendis, veniam
+          voluptatibus sequi laudantium accusamus reprehenderit nisi,
+          repudiandae quasi! Ea, fuga.
+        </p>
+        <div>explore</div>
+        <div>trend</div>
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#0099ff"
-          fill-opacity="1"
-          d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,69.3C1120,64,1280,96,1360,112L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-      </svg>
+        <!-- waves to separate the hero section -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,69.3C1120,64,1280,96,1360,112L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+        </svg>
+      </section>
+
+      <section id="explore">
+        <div>
+          <!-- intro for explore section -->
+          <div>
+            explore the world and discover places that Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit.
+          </div>
+          <img src="../images/undraw_trip_re_f724.svg" alt="" />
+        </div>
+        <div>
+          <!-- explore section actual content -->
+          <!-- will have a carousel in a large card with a title and some description -->
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="https://placeimg.com/800/200/arch" class="w-full" />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="https://placeimg.com/800/200/arch" class="w-full" />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="https://placeimg.com/800/200/arch" class="w-full" />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="https://placeimg.com/800/200/arch" class="w-full" />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="trend">
+        <div>
+          <!-- intro for trend section -->
+          <div>
+            see what places people visit the most and Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit.
+          </div>
+          <img src="../images/undraw_polaroid_re_481f.svg" alt="" />
+        </div>
+        <!-- trend section actual content -->
+        <!-- will have a bunch of cards -->
+      </section>
     </main>
 
     <footer></footer>
