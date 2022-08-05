@@ -7,27 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   </head>
-  <body class="bg-gray-700">
-    <header>
-      <div>
+  <body class="bg-gray-800">
+    <header class="flex justify-between pl-3 pr-10">
+      <div
+        class="group flex cursor-pointer select-none items-center justify-between gap-7"
+      >
         <!-- logo and slogan part -->
         <div>
           <img
-            class="invert filter"
+            class="max-h-28 invert filter"
             src="../images/logo/ttip-removebg.png"
             alt=""
           />
         </div>
-        <h2>see the world through our lens</h2>
+        <h2
+          class="-translate-x-10 scale-150 text-center font-recursive text-gray-300 opacity-0 transition-all duration-1000 ease-in group-hover:translate-x-0 group-hover:opacity-100 group-hover:duration-200"
+        >
+          See the World<br />through our lens
+        </h2>
       </div>
 
-      <div>
+      <div class="flex items-center gap-5 divide-x text-gray-200">
         <!-- for menu items -->
-        <div>explore</div>
-        <div>trend</div>
-        <div>language</div>
-        <div>theme</div>
-        <div>about</div>
+        <div class="uppercase">explore</div>
+        <div class="pl-5 uppercase">trend</div>
+        <div class="pl-5 uppercase">language</div>
+        <div class="pl-5 uppercase">theme</div>
+        <div class="pl-5 uppercase">about</div>
       </div>
     </header>
 

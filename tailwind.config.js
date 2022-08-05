@@ -3,7 +3,11 @@ module.exports = {
   darkMode: "class",
   content: ["./src/**/*.{html,js}", "./public/index.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        recursive: ["Marck Script"],
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
