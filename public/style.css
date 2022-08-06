@@ -1247,14 +1247,6 @@ video {
   bottom: auto;
 }
 
-.tooltip-left:before{
-  transform: translateY(-50%);
-  top: 50%;
-  left: auto;
-  right: var(--tooltip-offset);
-  bottom: auto;
-}
-
 .btn-outline .badge{
   --tw-border-opacity: 1;
   border-color: hsl(var(--nf, var(--n)) / var(--tw-border-opacity));
@@ -2289,15 +2281,6 @@ body[dir="rtl"] .checkbox:checked,
   bottom: auto;
 }
 
-.tooltip-left:after{
-  transform: translateY(-50%);
-  border-color: transparent transparent transparent var(--tooltip-color);
-  top: 50%;
-  left: auto;
-  right: calc(var(--tooltip-tail-offset) + 1px);
-  bottom: auto;
-}
-
 .rounded-box{
   border-radius: var(--rounded-box, 1rem);
 }
@@ -2441,6 +2424,22 @@ body[dir="rtl"] .checkbox:checked,
   margin-top: -3.5rem;
 }
 
+.-mb-2{
+  margin-bottom: -0.5rem;
+}
+
+.-mt-2{
+  margin-top: -0.5rem;
+}
+
+.-mt-6{
+  margin-top: -1.5rem;
+}
+
+.-mt-5{
+  margin-top: -1.25rem;
+}
+
 .inline{
   display: inline;
 }
@@ -2545,6 +2544,10 @@ body[dir="rtl"] .checkbox:checked,
   align-items: center;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -2573,16 +2576,26 @@ body[dir="rtl"] .checkbox:checked,
   gap: 1rem;
 }
 
+.gap-2{
+  gap: 0.5rem;
+}
+
+.gap-3{
+  gap: 0.75rem;
+}
+
+.divide-y > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
 .overflow-x-auto{
   overflow-x: auto;
 }
 
 .overflow-x-hidden{
   overflow-x: hidden;
-}
-
-.rounded{
-  border-radius: 0.25rem;
 }
 
 .border-b{
@@ -2696,6 +2709,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .pr-10{
   padding-right: 2.5rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
 }
 
 .text-center{
@@ -2812,10 +2829,6 @@ body[dir="rtl"] .checkbox:checked,
   transition-timing-function: linear;
 }
 
-.tooltip-close {
-  opacity: 0;
-}
-
 .hover\:-translate-y-2:hover{
   --tw-translate-y: -0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2872,43 +2885,9 @@ body[dir="rtl"] .checkbox:checked,
   fill: #fff;
 }
 
- 
-.dropdown.active\:dropdown-hover:active:hover .dropdown-content{
-  visibility: visible;
-  opacity: 1;
-}
-
-.active\:hero-overlay:active{
-  grid-column-start: 1;
-  grid-row-start: 1;
-  height: 100%;
-  width: 100%;
-  background-color: hsl(var(--n) / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.5;
-}
-
-.active\:tooltip-bottom:active:before{
-  transform: translateX(-50%);
-  top: var(--tooltip-offset);
-  left: 50%;
-  right: auto;
-  bottom: auto;
-}
-
- 
-.dropdown.active\:dropdown-hover:active:hover .dropdown-content{
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.active\:tooltip-bottom:active:after{
-  transform: translateX(-50%);
-  border-color: transparent transparent var(--tooltip-color) transparent;
-  top: var(--tooltip-tail-offset);
-  left: 50%;
-  right: auto;
-  bottom: auto;
+.hover\:underline:hover{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .group:hover .group-hover\:stroke-gray-200{
