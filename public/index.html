@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   </head>
-  <body class="bg-gray-800">
-    <header class="flex justify-between pl-3 pr-10">
+  <body class="relative overflow-x-hidden bg-gray-800">
+    <header class="flex justify-between pl-5 pr-10 sticky top-0 z-20 backdrop-blur-md border-b border-gray-700 bg-slate-700 bg-opacity-50">
       <div
         class="group flex cursor-pointer select-none items-center justify-between gap-7"
       >
         <!-- logo and slogan part -->
         <div>
           <img
-            class="max-h-28 invert filter"
+            class="max-h-24 invert filter"
             src="../images/logo/ttip-removebg.png"
             alt=""
           />
@@ -32,7 +32,7 @@
         <!-- explore item -->
         <a
           href="#explore"
-          class="tooltip tooltip-primary uppercase"
+          class="tooltip uppercase"
           data-tip="explore"
         >
           <svg
@@ -53,7 +53,7 @@
         <!-- trend item -->
         <a
           href="#trend"
-          class="tooltip tooltip-primary uppercase"
+          class="tooltip uppercase"
           data-tip="trend"
         >
           <svg
@@ -79,7 +79,7 @@
         </a>
         <!-- language item -->
         <div
-          class="dropdown tooltip tooltip-primary cursor-pointer select-none uppercase"
+          class="dropdown tooltip cursor-pointer select-none uppercase"
           data-tip="language"
         >
           <label tabindex="0"
@@ -108,7 +108,7 @@
         </div>
         <!-- theme item -->
         <div
-          class="tooltip tooltip-primary uppercase"
+          class="tooltip uppercase"
           style="translate: 0px 2px"
           data-tip="theme"
         >
@@ -141,7 +141,7 @@
         </div>
         <a
           href="#footer"
-          class="tooltip tooltip-primary uppercase"
+          class="tooltip uppercase"
           data-tip="about"
         >
           <svg
@@ -163,9 +163,22 @@
     </header>
 
     <main>
-      <div>
+      <div class="absolute top-0 right-0 left-0 -z-10 bg-gradient-to-br from-gray-800 via-gray-800 min-h-96">
         <!-- for the bg image -->
-        <img src="https://placeimg.com/1000/480/nature" alt="" />
+        <img
+          class="w-full object-cover relative opacity-30"
+          src="https://placeimg.com/1000/480/nature"
+          alt=""
+        >
+        <!-- waves to separate the hero section -->
+        <svg class="absolute -bottom-36 fill-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill-opacity="1"
+            d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,69.3C1120,64,1280,96,1360,112L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+        </svg>
+
+        </img>
       </div>
 
       <!-- logo part -->
@@ -188,14 +201,6 @@
         <div>explore</div>
         <div>trend</div>
 
-        <!-- waves to separate the hero section -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#0099ff"
-            fill-opacity="1"
-            d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,69.3C1120,64,1280,96,1360,112L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-          ></path>
-        </svg>
       </section>
 
       <section id="explore">
