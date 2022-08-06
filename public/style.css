@@ -2614,6 +2614,47 @@ body[dir="rtl"] .checkbox:checked,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@-webkit-keyframes shake{
+  0%{
+    transform: rotate(0);
+  }
+
+  33%{
+    transform: rotate(15deg);
+  }
+
+  66%{
+    transform: rotate(-15deg);
+  }
+
+  100%{
+    transform: rotate(0);
+  }
+}
+
+@keyframes shake{
+  0%{
+    transform: rotate(0);
+  }
+
+  33%{
+    transform: rotate(15deg);
+  }
+
+  66%{
+    transform: rotate(-15deg);
+  }
+
+  100%{
+    transform: rotate(0);
+  }
+}
+
+.hover\:animate-shake:hover{
+  -webkit-animation: shake 1s 2;
+          animation: shake 1s 2;
+}
+
 .hover\:fill-white:hover{
   fill: #fff;
 }
