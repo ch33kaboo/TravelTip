@@ -57,7 +57,7 @@
         <!-- explore item -->
         <a
           href="#explore"
-          class="tooltip uppercase tooltip-bottom"
+          class="tooltip tooltip-info uppercase tooltip-bottom"
           data-tip="explore"
         >
           <svg
@@ -78,7 +78,7 @@
         <!-- trend item -->
         <a
           href="#trend"
-          class="tooltip uppercase tooltip-bottom"
+          class="tooltip tooltip-info uppercase tooltip-bottom"
           data-tip="trend"
         >
           <svg
@@ -104,12 +104,12 @@
         </a>
         <!-- language item -->
         <div
-          class="dropdown tooltip cursor-pointer select-none uppercase tooltip-bottom"
+          class="dropdown tooltip tooltip-info select-none uppercase tooltip-bottom cursor-pointer"
           data-tip="language"
         >
           <label tabindex="0"
             ><svg
-              class="h-6 w-6"
+              class="h-6 w-6 cursor-pointer"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -133,7 +133,7 @@
         </div>
         <!-- theme item -->
         <div
-          class="tooltip uppercase tooltip-bottom"
+          class="tooltip tooltip-info uppercase tooltip-bottom"
           style="translate: 0px 2px"
           data-tip="theme"
         >
@@ -166,7 +166,7 @@
         </div>
         <a
           href="#footer"
-          class="tooltip uppercase tooltip-bottom"
+          class="tooltip tooltip-info uppercase tooltip-bottom"
           data-tip="about"
         >
           <svg
@@ -188,15 +188,15 @@
     </header>
 
     <main>
-      <div class="absolute top-0 right-0 left-0 -z-10 bg-gradient-to-br from-gray-800 via-gray-800 min-h-96">
+      <div class="absolute top-0 right-0 left-0 -z-10 bg-gradient-to-t from-transparent via-gray-800 min-h-96">
         <!-- for the bg image -->
         <img
-          class="min-w-full object-cover relative opacity-30"
+          class="min-w-full min-h-screen object-cover relative opacity-30"
           src="https://placeimg.com/1000/480/nature"
           alt=""
         >
         <!-- waves to separate the hero section -->
-        <svg class="absolute -bottom-36 fill-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg class="absolute -bottom-40 fill-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill-opacity="1"
             d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,69.3C1120,64,1280,96,1360,112L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
@@ -232,16 +232,43 @@
 
       </section>
 
+      <!-- waves to give the content after hero some space -->
+      <svg class="fill-gray-800 opacity-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill-opacity="1"
+          d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,69.3C1120,64,1280,96,1360,112L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+
       <section id="explore">
-        <div>
+        <div class="flex justify-around items-center text-3xl font-medium text-center px-5 text-gray-200 select-none -mt-52 mb-16">
           <!-- intro for explore section -->
-          <div>
-            explore the world and discover places that Lorem ipsum, dolor sit
-            amet consectetur adipisicing elit.
+          <div class="w-1/2 flex flex-col gap-6">
+            <div class="text-5xl font-cool flex items-center justify-center gap-3">
+              <svg
+              class="h-10 w-10 translate-y-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+              <div>explore</div>
+            </div>
+            <div class="text-2xl font-cool font-thin">
+              explore the world and discover places that Lorem ipsum, dolor sit
+              amet consectetur adipisicing elit.
+            </div>
           </div>
-          <img src="../images/undraw_trip_re_f724.svg" alt="" />
+          <img class="w-1/3" src="../images/undraw_trip_re_f724.svg" alt="" />
         </div>
-        <div>
+        <div class="sm:mx-5 md:mx-8 overflow-hidden rounded-lg">
           <!-- explore section actual content -->
           <!-- will have a carousel in a large card with a title and some description -->
           <div class="carousel w-full">
