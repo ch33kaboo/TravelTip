@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         recursive: ["Marck Script"],
+        cool: ["Carter One"],
       },
     },
   },
