@@ -2425,24 +2425,27 @@ body[dir="rtl"] .checkbox:checked,
   top: 50%;
 }
 
-.left-1{
-  left: 0.25rem;
-}
-
-.right-1{
-  right: 0.25rem;
-}
-
-.left-2{
-  left: 0.5rem;
-}
-
 .z-20{
   z-index: 20;
 }
 
 .-z-10{
   z-index: -10;
+}
+
+.my-12{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.my-14{
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .-mb-2{
@@ -2469,8 +2472,36 @@ body[dir="rtl"] .checkbox:checked,
   margin-top: -3.5rem;
 }
 
-.block{
-  display: block;
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
+}
+
+.mt-24{
+  margin-top: 6rem;
+}
+
+.mt-96{
+  margin-top: 24rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mb-96{
+  margin-bottom: 24rem;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .inline{
@@ -2549,6 +2580,14 @@ body[dir="rtl"] .checkbox:checked,
   width: 100%;
 }
 
+.w-2\/5{
+  width: 40%;
+}
+
+.w-1\/5{
+  width: 20%;
+}
+
 .min-w-full{
   min-width: 100%;
 }
@@ -2565,6 +2604,27 @@ body[dir="rtl"] .checkbox:checked,
 
 .-translate-x-1{
   --tw-translate-x: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-45{
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-12{
+  --tw-rotate: 12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-3{
+  --tw-rotate: 3deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-105{
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2719,10 +2779,6 @@ body[dir="rtl"] .checkbox:checked,
   --tw-bg-opacity: 0.5;
 }
 
-.bg-opacity-40{
-  --tw-bg-opacity: 0.4;
-}
-
 .bg-opacity-60{
   --tw-bg-opacity: 0.6;
 }
@@ -2869,6 +2925,18 @@ body[dir="rtl"] .checkbox:checked,
   text-transform: uppercase;
 }
 
+.leading-3{
+  line-height: .75rem;
+}
+
+.leading-7{
+  line-height: 1.75rem;
+}
+
+.leading-10{
+  line-height: 2.5rem;
+}
+
 .text-gray-200{
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
@@ -2939,8 +3007,16 @@ body[dir="rtl"] .checkbox:checked,
   transition-duration: 150ms;
 }
 
+.duration-200{
+  transition-duration: 200ms;
+}
+
 .ease-linear{
   transition-timing-function: linear;
+}
+
+.ease-in{
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 :target {
@@ -2952,9 +3028,20 @@ body[dir="rtl"] .checkbox:checked,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:rotate-6:hover{
+  --tw-rotate: 6deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:scale-105:hover{
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-110:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
