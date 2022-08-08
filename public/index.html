@@ -39,7 +39,7 @@
     </div>
 
 
-    <header class="flex justify-between pb-3 pt-2 pl-5 pr-10 sticky top-0 z-20 backdrop-blur-md border-b border-gray-700 bg-slate-700 bg-opacity-50">
+    <header class="flex justify-between pb-3 pt-2 pl-5 pr-10 sticky top-0 z-20 backdrop-blur-md border-b border-gray-700 bg-slate-500 dark:bg-slate-700 bg-opacity-50">
       <div
         class="flex cursor-pointer select-none items-center justify-between gap-7"
       >
@@ -191,7 +191,7 @@
     </header>
 
     <main>
-      <div class="absolute top-0 right-0 left-0 -z-10 bg-gradient-to-t from-transparent via-gray-800 min-h-96">
+      <div class="absolute top-0 right-0 left-0 -z-10 bg-gray-700 dark:bg-gradient-to-t dark:from-transparent dark:via-gray-800 min-h-96">
         <!-- for the bg image -->
         <img
           class="min-w-full min-h-screen object-cover relative opacity-30"
@@ -244,7 +244,7 @@
       </svg>
 
       <section id="explore">
-        <div class="flex justify-around items-center text-3xl font-medium text-center px-5 text-gray-200 select-none -mt-52 mb-16">
+        <div class="flex justify-around items-center text-3xl font-medium text-center px-5 text-gray-800 dark:text-gray-200 select-none -mt-52 mb-16">
           <!-- intro for explore section -->
           <div class="w-1/2 flex flex-col gap-6 items-center">
             <div class="text-5xl font-cool flex items-center justify-center gap-3">
@@ -268,7 +268,7 @@
               explore the world and discover places that Lorem ipsum, dolor sit
               amet consectetur adipisicing elit.
             </div>
-            <a href="#explore-carousel" class="cursor-pointer select-none text-xl font-cool font-thin bg-gray-800 py-2 px-5 rounded-lg relative left-3 group">
+            <a href="#explore-carousel" class="cursor-pointer select-none text-xl font-cool font-thin bg-gray-300 dark:bg-gray-800 py-2 px-5 rounded-lg relative left-3 group">
               <div class="absolute -inset-1 bg-gradient-to-tr from-cyan-600 to-pink-600 group-hover:-inset-2 transition-all ease-in duration-150 -z-10 blur-md"></div>
               <div>explore now!</div>
             </a>
@@ -386,7 +386,7 @@
       <br>
       <section id="trend">
         <br>
-        <div class="flex justify-around items-center text-3xl font-medium text-center px-5 text-gray-200 select-none mb-20 mt-10">
+        <div class="flex justify-around items-center text-3xl font-medium text-center px-5 text-gray-800 dark:text-gray-200 select-none mb-20 mt-10">
           <!-- intro for trend section -->
           <div class="w-1/2 flex flex-col gap-6 items-center">
             <div class="text-5xl font-cool flex items-center justify-center gap-3">
@@ -415,7 +415,7 @@
             <div class="text-2xl font-cool font-thin">
               see what places people visit the most so that you too can Lorem ipsum dolor, sit amet consectetur adipisicing elit Dolorum sequi deserunt laudantium.
             </div>
-            <a href="#rank" class="cursor-pointer select-none text-xl font-cool font-thin bg-gray-800 py-2 px-5 rounded-lg relative left-3 group">
+            <a href="#rank" class="cursor-pointer select-none text-xl font-cool font-thin bg-gray-300 dark:bg-gray-800 py-2 px-5 rounded-lg relative left-3 group">
               <div class="absolute -inset-1 bg-gradient-to-tr from-cyan-600 to-pink-600 group-hover:-inset-2 transition-all ease-in duration-150 -z-10 blur-md"></div>
               <div>show trends</div>
             </a>
@@ -429,94 +429,97 @@
         <!-- will have a ranking table then a bunch of cards -->
         <div class="mx-5 md:mx-16 mb-8">
           <!-- ranking wrapper -->
-          <div class="font-cool text-gray-200 flex justify-center items-center m-3 select-none text-lg" id="rank">
+          <div class="font-cool text-gray-800 dark:text-gray-200 flex justify-center items-center m-3 select-none text-lg" id="rank">
             NOTE: this is a shortened list of the most visited ones, for more details
-            check&nbsp;<a class="text-cyan-400 underline hover:text-cyan-300" href="#trend-detailed">trend</a>
+            check&nbsp;<a class="text-cyan-700 dark:text-cyan-400 underline hover:text-cyan-600 dark:hover:text-cyan-300" href="#trend-detailed">trend</a>
           </div>
-          <div class="overflow-x-auto">
-            <table class="table table-zebra w-full">
-              <!-- head -->
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>City</th>
-                  <th>Country</th>
-                  <th>Visitors per Year</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- row 1 -->
-                <tr>
-                  <th>1</th>
-                  <td>Bangkok</td>
-                  <td>Thailand</td>
-                  <td>22.78 million</td>
-                </tr>
-                <!-- row 2 -->
-                <tr>
-                  <th>2</th>
-                  <td>Paris</td>
-                  <td>France</td>
-                  <td>19.10 million</td>
-                </tr>
-                <!-- row 3 -->
-                <tr>
-                  <th>3</th>
-                  <td>London</td>
-                  <td>United Kingdom</td>
-                  <td>19.09 million</td>
-                </tr>
-                <!-- row 4 -->
-                <tr>
-                  <th>4</th>
-                  <td>Dubai</td>
-                  <td>United Arab Emirates</td>
-                  <td>15.93 million</td>
-                </tr>
-                <!-- row 5 -->
-                <tr>
-                  <th>5</th>
-                  <td>Singapore</td>
-                  <td>The Republic of Singapore</td>
-                  <td>14.67 million</td>
-                </tr>
-                <!-- row 6 -->
-                <tr>
-                  <th>6</th>
-                  <td>Kuala Lumpur</td>
-                  <td>Malaysia</td>
-                  <td>13.79 million</td>
-                </tr>
-                <!-- row 7 -->
-                <tr>
-                  <th>7</th>
-                  <td>New York</td>
-                  <td>United States of America</td>
-                  <td>13.60 million</td>
-                </tr>
-                <!-- row 8 -->
-                <tr>
-                  <th>8</th>
-                  <td>Istanbul</td>
-                  <td>Turkey</td>
-                  <td>13.40 million</td>
-                </tr>
-                <!-- row 9 -->
-                <tr>
-                  <th>9</th>
-                  <td>Tokyo</td>
-                  <td>Japan</td>
-                  <td>12.93 million</td>
-                </tr>
-                <!-- row 10 -->
-                <tr>
-                  <th>10</th>
-                  <td>Barcelona</td>
-                  <td>Spain</td>
-                  <td>10.41 million</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="relative group">
+            <div class="shady-borders inset-0"></div>
+            <div class="overflow-x-auto">
+              <table class="table table-zebra w-full">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>City</th>
+                    <th>Country</th>
+                    <th>Visitors per Year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- row 1 -->
+                  <tr>
+                    <th>1</th>
+                    <td>Bangkok</td>
+                    <td>Thailand</td>
+                    <td>22.78 million</td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr>
+                    <th>2</th>
+                    <td>Paris</td>
+                    <td>France</td>
+                    <td>19.10 million</td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr>
+                    <th>3</th>
+                    <td>London</td>
+                    <td>United Kingdom</td>
+                    <td>19.09 million</td>
+                  </tr>
+                  <!-- row 4 -->
+                  <tr>
+                    <th>4</th>
+                    <td>Dubai</td>
+                    <td>United Arab Emirates</td>
+                    <td>15.93 million</td>
+                  </tr>
+                  <!-- row 5 -->
+                  <tr>
+                    <th>5</th>
+                    <td>Singapore</td>
+                    <td>The Republic of Singapore</td>
+                    <td>14.67 million</td>
+                  </tr>
+                  <!-- row 6 -->
+                  <tr>
+                    <th>6</th>
+                    <td>Kuala Lumpur</td>
+                    <td>Malaysia</td>
+                    <td>13.79 million</td>
+                  </tr>
+                  <!-- row 7 -->
+                  <tr>
+                    <th>7</th>
+                    <td>New York</td>
+                    <td>United States of America</td>
+                    <td>13.60 million</td>
+                  </tr>
+                  <!-- row 8 -->
+                  <tr>
+                    <th>8</th>
+                    <td>Istanbul</td>
+                    <td>Turkey</td>
+                    <td>13.40 million</td>
+                  </tr>
+                  <!-- row 9 -->
+                  <tr>
+                    <th>9</th>
+                    <td>Tokyo</td>
+                    <td>Japan</td>
+                    <td>12.93 million</td>
+                  </tr>
+                  <!-- row 10 -->
+                  <tr>
+                    <th>10</th>
+                    <td>Barcelona</td>
+                    <td>Spain</td>
+                    <td>10.41 million</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div class="mt-32 mx-5 md:mx-16 flex flex-col gap-8 text-gray-200 font-cool text-3xl" id="trend-detailed">
