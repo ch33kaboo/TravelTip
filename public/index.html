@@ -509,47 +509,540 @@
             </table>
           </div>
         </div>
-        <div id="trend-detailed">
+        <div class="mt-32 mx-5 md:mx-16 flex flex-col gap-8 text-gray-200 font-cool text-3xl" id="trend-detailed">
           <!-- the grid of cards -->
-          <div>
+          <div class="flex gap-16 items-stretch pr-4 border border-gray-200 rounded-lg overflow-hidden bg-gray-900">
             <!-- a card -->
             <div>
-              <img src="../images/places/bangkok.png" alt="" />
+              <img class="max-h-80 w-96 object-cover" src="../images/places/bangkok.png" alt="" />
             </div>
-            <div>
+            <div class="flex flex-col items-start justify-evenly my-8">
               <!-- card description -->
               <div>bangkok</div>
               <div>Country: Thailand</div>
-              <div>Visitors: 22.78 million</div>
+              <div>Visitors: 22.78 <span class="text-sm"> million</span></div>
               <div>Rank: 1</div>
-              <div>rate this destination</div>
-              <div class="rating">
-                <input
-                  type="radio"
-                  name="rating-4"
-                  class="mask mask-star-2 bg-green-500"
-                />
-                <input
-                  type="radio"
-                  name="rating-4"
-                  class="mask mask-star-2 bg-green-500"
-                  checked
-                />
-                <input
-                  type="radio"
-                  name="rating-4"
-                  class="mask mask-star-2 bg-green-500"
-                />
-                <input
-                  type="radio"
-                  name="rating-4"
-                  class="mask mask-star-2 bg-green-500"
-                />
-                <input
-                  type="radio"
-                  name="rating-4"
-                  class="mask mask-star-2 bg-green-500"
-                />
+            </div>
+            <div class="flex flex-col items-center justify-center gap-5 ml-5 my-3">
+              <div class="select-none">
+                <div class="text-base underline text-center text-gray-300">description</div>
+                <div class="text-base max-w-sm text-center">
+                  Enjoy the usual city comforts of megamalls and modern spaces before turning towards its collection of golden temples and shrines. Follow your nose to Bangkok's countless street markets stuffed with spicy, sour, sweet, and salty flavors, then hop on a boat to reach their floating markets.
+                </div>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <div>rate this destination</div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-16 items-stretch pr-4 border border-gray-200 rounded-lg overflow-hidden bg-gray-900">
+            <!-- a card -->
+            <div>
+              <img class="max-h-80 w-96 object-cover" src="../images/places/paris.jpg" alt="" />
+            </div>
+            <div class="flex flex-col items-start justify-evenly my-8">
+              <!-- card description -->
+              <div>Paris</div>
+              <div>Country: France</div>
+              <div>Visitors: 19.10 <span class="text-sm"> million</span></div>
+              <div>Rank: 2</div>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-5 ml-5 my-3">
+              <div class="select-none">
+                <div class="text-base underline text-center text-gray-300">description</div>
+                <div class="text-base max-w-sm text-center">
+                  as an established art and fashion capital, visitors can't go without seeing the collections of Musee d'Orsay, musée du Louvre and Centre Pompidou. Atmospheric bookstores, vintage shops and flea markets make their mark.
+                </div>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <div>rate this destination</div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-16 items-stretch pr-4 border border-gray-200 rounded-lg overflow-hidden bg-gray-900">
+            <!-- a card -->
+            <div>
+              <img class="max-h-80 w-96 object-cover" src="../images/places/london.jpg" alt="" />
+            </div>
+            <div class="flex flex-col items-start justify-evenly my-8">
+              <!-- card description -->
+              <div>London</div>
+              <div>Country: UK</div>
+              <div>Visitors: 19.09 <span class="text-sm"> million</span></div>
+              <div>Rank: 3</div>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-5 ml-5 my-3">
+              <div class="select-none">
+                <div class="text-base underline text-center text-gray-300">description</div>
+                <div class="text-base max-w-sm text-center">
+                  London is clearly one of the most popular cities in the world! The gothic architecture in London is matched by splashes of innovation (such as the Shard, Tate Modern, and the Sky Garden), offering up grand and historical quarters.
+                </div>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <div>rate this destination</div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-16 items-stretch pr-4 border border-gray-200 rounded-lg overflow-hidden bg-gray-900">
+            <!-- a card -->
+            <div>
+              <img class="max-h-80 w-96 object-cover" src="../images/places/dubai.jpg" alt="" />
+            </div>
+            <div class="flex flex-col items-start justify-evenly my-8">
+              <!-- card description -->
+              <div>Dubai</div>
+              <div>Country: UAE</div>
+              <div>Visitors: 15.93.78 <span class="text-sm"> million</span></div>
+              <div>Rank: 4</div>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-5 ml-5 my-3">
+              <div class="select-none">
+                <div class="text-base underline text-center text-gray-300">description</div>
+                <div class="text-base max-w-sm text-center">
+                  Dubai rises out from the desert in all its futuristic glory, City life is defined by lazy shopping, performance venues, serene places of worship, and fancy rooftop terraces.
+                </div>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <div>rate this destination</div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-16 items-stretch pr-4 border border-gray-200 rounded-lg overflow-hidden bg-gray-900">
+            <!-- a card -->
+            <div>
+              <img class="max-h-80 w-96 object-cover" src="../images/places/singapore.jpg" alt="" />
+            </div>
+            <div class="flex flex-col items-start justify-evenly my-8">
+              <!-- card description -->
+              <div>Singapore</div>
+              <div>Country: Singapore</div>
+              <div>Visitors: 14.67 <span class="text-sm"> million</span></div>
+              <div>Rank: 5</div>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-5 ml-5 my-3">
+              <div class="select-none">
+                <div class="text-base underline text-center text-gray-300">description</div>
+                <div class="text-base max-w-sm text-center">
+                  Green and innovative, Singapore is a city designed with the future in mind, Hop from attraction to another with its efficient transportation system and hit up the diverse neighborhoods of Little India to Chinatown.
+                </div>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <div>rate this destination</div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-16 items-stretch pr-4 border border-gray-200 rounded-lg overflow-hidden bg-gray-900">
+            <!-- a card -->
+            <div>
+              <img class="max-h-80 w-96 object-cover" src="../images/places/kuala-lumpur.jpg" alt="" />
+            </div>
+            <div class="flex flex-col items-start justify-evenly my-8">
+              <!-- card description -->
+              <div>Kuala Lumpur</div>
+              <div>Country: Malaysia</div>
+              <div>Visitors: 13.79 <span class="text-sm"> million</span></div>
+              <div>Rank: 6</div>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-5 ml-5 my-3">
+              <div class="select-none">
+                <div class="text-base underline text-center text-gray-300">description</div>
+                <div class="text-base max-w-sm text-center">
+                  Open your senses to absorb Kuala Lumpur's lively energy!, Thanks to its multicultural mix of Malay, Chinese, and Indian community, the city is home to mosques and temples that stand out from gleaming skyscrapers.
+                </div>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <div>rate this destination</div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-16 items-stretch pr-4 border border-gray-200 rounded-lg overflow-hidden bg-gray-900">
+            <!-- a card -->
+            <div>
+              <img class="max-h-80 w-96 object-cover" src="../images/places/nyc.jpg" alt="" />
+            </div>
+            <div class="flex flex-col items-start justify-evenly my-8">
+              <!-- card description -->
+              <div>New York</div>
+              <div>Country: USA</div>
+              <div>Visitors: 13.60 <span class="text-sm"> million</span></div>
+              <div>Rank: 7</div>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-5 ml-5 my-3">
+              <div class="select-none">
+                <div class="text-base underline text-center text-gray-300">description</div>
+                <div class="text-base max-w-sm text-center">
+                  New York, or the city where dreams are made!<br>Following the city's grid-like design, trawl the streets for private art galleries and world-famous the Met, MoMA, and Guggenhiem. Times Square and of course Central Park.
+                </div>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <div>rate this destination</div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-16 items-stretch pr-4 border border-gray-200 rounded-lg overflow-hidden bg-gray-900">
+            <!-- a card -->
+            <div>
+              <img class="max-h-80 w-96 object-cover" src="../images/places/istanbul.jpg" alt="" />
+            </div>
+            <div class="flex flex-col items-start justify-evenly my-8">
+              <!-- card description -->
+              <div>Istanbul</div>
+              <div>Country: Turkey</div>
+              <div>Visitors: 13.40 <span class="text-sm"> million</span></div>
+              <div>Rank: 8</div>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-5 ml-5 my-3">
+              <div class="select-none">
+                <div class="text-base underline text-center text-gray-300">description</div>
+                <div class="text-base max-w-sm text-center">
+                  Istanbul is a historical trove, its strategic location having witnessed many ruling empires.
+
+                  Tracing back to the Greeks, Romans, Venetians, and finally the Ottomans, the city is adorned with Byzantine churches and imperial mosques.
+
+                  Recent decades have seen sharp spikes in the skyline as galleries, museums, and tall office towers grew alongside the old.
+                </div>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <div>rate this destination</div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-16 items-stretch pr-4 border border-gray-200 rounded-lg overflow-hidden bg-gray-900">
+            <!-- a card -->
+            <div>
+              <img class="max-h-80 w-96 object-cover" src="../images/places/tokyo.jpg" alt="" />
+            </div>
+            <div class="flex flex-col items-start justify-evenly my-8">
+              <!-- card description -->
+              <div>Tokyo</div>
+              <div>Country: Japan</div>
+              <div>Visitors: 12.93 <span class="text-sm"> million</span></div>
+              <div>Rank: 9</div>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-5 ml-5 my-3">
+              <div class="select-none">
+                <div class="text-base underline text-center text-gray-300">description</div>
+                <div class="text-base max-w-sm text-center">
+                  If there was a city that lived in the future, Tokyo is it!
+
+                  Clean streets, chrome skyscrapers, and ever-moving crowds keep Tokyo running 24/7.
+                  
+                  Smart electronics and convenient technology set incredibly high living standards.
+
+                  To experience Tokyo, look past the trendy cafés and bold fashions to find under-the-tracks eateries, languid neighborhoods, and hidden shrines.
+                </div>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <div>rate this destination</div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-16 items-stretch pr-4 border border-gray-200 rounded-lg overflow-hidden bg-gray-900">
+            <!-- a card -->
+            <div>
+              <img class="max-h-80 w-96 object-cover" src="../images/places/barcelona.jpg" alt="" />
+            </div>
+            <div class="flex flex-col items-start justify-evenly my-8">
+              <!-- card description -->
+              <div>Barcelona</div>
+              <div>Country: Spain</div>
+              <div>Visitors: 	10.41<span class="text-sm"> million</span></div>
+              <div>Rank: 10</div>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-5 ml-5 my-3">
+              <div class="select-none">
+                <div class="text-base underline text-center text-gray-300">description</div>
+                <div class="text-base max-w-sm text-center">
+
+                  Barcelona is generous with its fresh sea bounty and world-class architecture.
+
+                  You can expect as many flavors of architecture as there are tapas - too many to see in a week.
+
+                  From Roman-era subterranean spaces to the Gothic Quarter of the Middle Ages, to Gaudi's modernism masterpieces, the city is dotted with magnificent architecture.
+                </div>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <div>rate this destination</div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 bg-green-500"
+                  />
+                </div>
               </div>
             </div>
           </div>
