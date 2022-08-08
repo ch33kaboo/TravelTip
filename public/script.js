@@ -13,3 +13,11 @@ sunIcon.addEventListener("click", () => {
 moonIcon.addEventListener("click", () => {
     allPage.classList.toggle("dark")
 })
+
+
+// using animate on scroll
+AOS.init({
+    delay: 150,
+    duration: 1200,
+    once: true
+});
