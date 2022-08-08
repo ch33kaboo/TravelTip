@@ -6,8 +6,9 @@
     <title>TravelTip</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="./script.js" defer></script>
   </head>
-  <body class="relative overflow-x-hidden bg-gray-800">
+  <body class="relative overflow-x-hidden bg-gray-300 dark:bg-gray-800">
 
     <!-- first I'll make a modal button to contact the developper (ME) -->
     <!-- this is the modal button -->
@@ -143,6 +144,7 @@
 
             <!-- sun icon -->
             <svg
+              id="sun-icon"
               class="swap-on h-6 w-6 fill-current"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -154,6 +156,7 @@
 
             <!-- moon icon -->
             <svg
+              id="moon-icon"
               class="swap-off h-6 w-6 fill-current"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -196,7 +199,7 @@
           alt=""
         >
         <!-- waves to separate the hero section -->
-        <svg class="absolute -bottom-40 fill-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg class="absolute -bottom-40 fill-gray-300 dark:fill-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill-opacity="1"
             d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,69.3C1120,64,1280,96,1360,112L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
@@ -273,106 +276,110 @@
           <img class="w-1/3" src="../images/undraw_trip_re_f724.svg" alt="a guy and girl beside a truck" />
         </div>
         <br id="explore-carousel">
-        <div class="sm:mx-5 md:mx-8 overflow-hidden rounded-lg">
-          <!-- explore section actual content -->
-          <!-- will have a carousel in a large card with a title and some description -->
-          <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full h-96 bg-gradient-to-t from-slate-600">
-              <img src="../images/places/explore/petra.png" class="w-full object-cover -z-10" />
-              <div class="absolute bottom-3 w-full flex flex-col gap-2 select-none text-center">
-                <div class="uppercase font-cool text-center text-2xl text-gray-200 justify-center">petra - jordan</div>
-                <div class="flex divide-x divide-white gap-3 justify-center items-center font-cool text-gray-200">
-                  <div>fourth century B.C.</div>
-                  <div class="pl-2">1 million visitors per year</div>
-                  <div class="pl-2">category: historical</div>
-                </div>
-              </div>
-              <div class="flex items-center justify-center md:hidden btn btn-outline absolute top-2 right-2 py-0 px-4 rounded-full bg-slate-100 bg-opacity-60">1/5</div>
-              <div
-                class="hidden absolute left-5 right-5 top-1/2 md:flex -translate-y-1/2 transform justify-between"
-              >
-                <a href="#slide5" class="btn btn-circle">❮</a>
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div>
-            
-            <div id="slide2" class="carousel-item relative w-full h-96 bg-gradient-to-t from-slate-600">
-              <img src="../images/places/explore/jerusalem.jpg" class="w-full object-cover -z-10" />
-              <div class="absolute bottom-3 w-full flex flex-col gap-2 select-none text-center">
-                <div class="uppercase font-cool text-center text-2xl text-gray-200 justify-center">Jerusalem - palestine</div>
-                <div class="flex divide-x divide-white gap-3 justify-center items-center font-cool text-gray-200">
-                  <div>2000 B.C.</div>
-                  <div class="pl-2">4.47 million visitors per year</div>
-                  <div class="pl-2">religious</div>
-                </div>
-              </div>
-              <div class="flex items-center justify-center md:hidden btn btn-outline absolute top-2 right-2 py-0 px-4 rounded-full bg-slate-100 bg-opacity-60">2/5</div>
-              <div
-                class="hidden absolute left-5 right-5 top-1/2 md:flex -translate-y-1/2 transform justify-between"
-              >
-                <a href="#slide1" class="btn btn-circle">❮</a>
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div>
+        <div class="relative group">
+          <div class="shady-borders inset-y-0 sm:inset-x-5 md:inset-x-8"></div>
 
-            <div id="slide3" class="carousel-item relative w-full h-96 bg-gradient-to-t from-slate-600">
-              <img src="../images/places/explore/central park.png" class="w-full object-cover -z-10" />
-              <div class="absolute bottom-3 w-full flex flex-col gap-2 select-none text-center">
-                <div class="uppercase font-cool text-center text-2xl text-gray-200 justify-center">Central Park - NYC</div>
-                <div class="flex divide-x divide-white gap-3 justify-center items-center font-cool text-gray-200">
-                  <div>1858 ~ today</div>
-                  <div class="pl-2">42 million visitors per year</div>
-                  <div class="pl-2">natural park</div>
+          <div class="sm:mx-5 md:mx-8 overflow-hidden rounded-lg">
+            <!-- explore section actual content -->
+            <!-- will have a carousel in a large card with a title and some description -->
+            <div class="carousel w-full">
+              <div id="slide1" class="carousel-item relative w-full h-96 bg-gradient-to-t from-slate-600">
+                <img src="../images/places/explore/petra.png" class="w-full object-cover -z-10" />
+                <div class="absolute bottom-3 w-full flex flex-col gap-2 select-none text-center">
+                  <div class="uppercase font-cool text-center text-2xl text-gray-200 justify-center">petra - jordan</div>
+                  <div class="flex divide-x divide-white gap-3 justify-center items-center font-cool text-gray-200">
+                    <div>fourth century B.C.</div>
+                    <div class="pl-2">1 million visitors per year</div>
+                    <div class="pl-2">category: historical</div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-center md:hidden btn btn-outline absolute top-2 right-2 py-0 px-4 rounded-full bg-slate-100 bg-opacity-60">1/5</div>
+                <div
+                  class="hidden absolute left-5 right-5 top-1/2 md:flex -translate-y-1/2 transform justify-between"
+                >
+                  <a href="#slide5" class="btn btn-circle">❮</a>
+                  <a href="#slide2" class="btn btn-circle">❯</a>
                 </div>
               </div>
-              <div class="flex items-center justify-center md:hidden btn btn-outline absolute top-2 right-2 py-0 px-4 rounded-full bg-slate-100 bg-opacity-60">3/5</div>
-              <div
-                class="hidden absolute left-5 right-5 top-1/2 md:flex -translate-y-1/2 transform justify-between"
-              >
-                <a href="#slide2" class="btn btn-circle">❮</a>
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div>
-
-            <div id="slide4" class="carousel-item relative w-full h-96 bg-gradient-to-t from-slate-600">
-              <img src="../images/places/explore/fuji.jpg" class="w-full object-cover -z-10" />
-              <div class="absolute bottom-3 w-full flex flex-col gap-2 select-none text-center">
-                <div class="uppercase font-cool text-center text-2xl text-gray-200 justify-center">fuji - japan</div>
-                <div class="flex divide-x divide-white gap-3 justify-center items-center font-cool text-gray-200">
-                  <div>100,000 years ago</div>
-                  <div class="pl-2">1 million visitors per year</div>
-                  <div class="pl-2">category: natural</div>
+              
+              <div id="slide2" class="carousel-item relative w-full h-96 bg-gradient-to-t from-slate-600">
+                <img src="../images/places/explore/jerusalem.jpg" class="w-full object-cover -z-10" />
+                <div class="absolute bottom-3 w-full flex flex-col gap-2 select-none text-center">
+                  <div class="uppercase font-cool text-center text-2xl text-gray-200 justify-center">Jerusalem - palestine</div>
+                  <div class="flex divide-x divide-white gap-3 justify-center items-center font-cool text-gray-200">
+                    <div>2000 B.C.</div>
+                    <div class="pl-2">4.47 million visitors per year</div>
+                    <div class="pl-2">religious</div>
+                  </div>
                 </div>
-              </div>
-              <div class="flex items-center justify-center md:hidden btn btn-outline absolute top-2 right-2 py-0 px-4 rounded-full bg-slate-100 bg-opacity-60">4/5</div>
-              <div
-                class="hidden absolute left-5 right-5 top-1/2 md:flex -translate-y-1/2 transform justify-between"
-              >
-                <a href="#slide3" class="btn btn-circle">❮</a>
-                <a href="#slide5" class="btn btn-circle">❯</a>
-              </div>
-            </div>
-
-            <div id="slide5" class="carousel-item relative w-full h-96 bg-gradient-to-t from-slate-600">
-              <img src="../images/places/explore/notre dame.jpeg" class="w-full object-cover -z-10" />
-              <div class="absolute bottom-3 w-full flex flex-col gap-2 select-none text-center">
-                <div class="uppercase font-cool text-center text-2xl text-gray-200 justify-center">notre dame - paris</div>
-                <div class="flex divide-x divide-white gap-3 justify-center items-center font-cool text-gray-200">
-                  <div>1163 (860 years ago)</div>
-                  <div class="pl-2">10 million visitors per year</div>
-                  <div class="pl-2">category: historical</div>
+                <div class="flex items-center justify-center md:hidden btn btn-outline absolute top-2 right-2 py-0 px-4 rounded-full bg-slate-100 bg-opacity-60">2/5</div>
+                <div
+                  class="hidden absolute left-5 right-5 top-1/2 md:flex -translate-y-1/2 transform justify-between"
+                >
+                  <a href="#slide1" class="btn btn-circle">❮</a>
+                  <a href="#slide3" class="btn btn-circle">❯</a>
                 </div>
               </div>
 
-              <div class="flex items-center justify-center md:hidden btn btn-outline absolute top-2 right-2 py-0 px-4 rounded-full bg-slate-100 bg-opacity-60">5/5</div>
-              <div
-                class="hidden absolute left-5 right-5 top-1/2 md:flex -translate-y-1/2 transform justify-between"
-              >
-                <a href="#slide3" class="btn btn-circle">❮</a>
-                <a href="#slide1" class="btn btn-circle">❯</a>
+              <div id="slide3" class="carousel-item relative w-full h-96 bg-gradient-to-t from-slate-600">
+                <img src="../images/places/explore/central park.png" class="w-full object-cover -z-10" />
+                <div class="absolute bottom-3 w-full flex flex-col gap-2 select-none text-center">
+                  <div class="uppercase font-cool text-center text-2xl text-gray-200 justify-center">Central Park - NYC</div>
+                  <div class="flex divide-x divide-white gap-3 justify-center items-center font-cool text-gray-200">
+                    <div>1858 ~ today</div>
+                    <div class="pl-2">42 million visitors per year</div>
+                    <div class="pl-2">natural park</div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-center md:hidden btn btn-outline absolute top-2 right-2 py-0 px-4 rounded-full bg-slate-100 bg-opacity-60">3/5</div>
+                <div
+                  class="hidden absolute left-5 right-5 top-1/2 md:flex -translate-y-1/2 transform justify-between"
+                >
+                  <a href="#slide2" class="btn btn-circle">❮</a>
+                  <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
               </div>
-            </div>
 
+              <div id="slide4" class="carousel-item relative w-full h-96 bg-gradient-to-t from-slate-600">
+                <img src="../images/places/explore/fuji.jpg" class="w-full object-cover -z-10" />
+                <div class="absolute bottom-3 w-full flex flex-col gap-2 select-none text-center">
+                  <div class="uppercase font-cool text-center text-2xl text-gray-200 justify-center">fuji - japan</div>
+                  <div class="flex divide-x divide-white gap-3 justify-center items-center font-cool text-gray-200">
+                    <div>100,000 years ago</div>
+                    <div class="pl-2">1 million visitors per year</div>
+                    <div class="pl-2">category: natural</div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-center md:hidden btn btn-outline absolute top-2 right-2 py-0 px-4 rounded-full bg-slate-100 bg-opacity-60">4/5</div>
+                <div
+                  class="hidden absolute left-5 right-5 top-1/2 md:flex -translate-y-1/2 transform justify-between"
+                >
+                  <a href="#slide3" class="btn btn-circle">❮</a>
+                  <a href="#slide5" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+
+              <div id="slide5" class="carousel-item relative w-full h-96 bg-gradient-to-t from-slate-600">
+                <img src="../images/places/explore/notre dame.jpeg" class="w-full object-cover -z-10" />
+                <div class="absolute bottom-3 w-full flex flex-col gap-2 select-none text-center">
+                  <div class="uppercase font-cool text-center text-2xl text-gray-200 justify-center">notre dame - paris</div>
+                  <div class="flex divide-x divide-white gap-3 justify-center items-center font-cool text-gray-200">
+                    <div>1163 (860 years ago)</div>
+                    <div class="pl-2">10 million visitors per year</div>
+                    <div class="pl-2">category: historical</div>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-center md:hidden btn btn-outline absolute top-2 right-2 py-0 px-4 rounded-full bg-slate-100 bg-opacity-60">5/5</div>
+                <div
+                  class="hidden absolute left-5 right-5 top-1/2 md:flex -translate-y-1/2 transform justify-between"
+                >
+                  <a href="#slide3" class="btn btn-circle">❮</a>
+                  <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>
@@ -413,7 +420,10 @@
               <div>show trends</div>
             </a>
           </div>
-          <img class="w-1/5 rotate-3 scale-105 hover:scale-110 hover:rotate-6 transition-all duration-200 ease-in" src="../images/undraw_polaroid_re_481f.svg" alt="polaroid picture" />
+          <div class="relative group w-1/5 rotate-3 scale-105 hover:scale-110 hover:rotate-6 transition-all duration-200 ease-in">
+            <div class="shady-borders inset-0"></div>
+            <img src="../images/undraw_polaroid_re_481f.svg" alt="polaroid picture" />
+          </div>
         </div>
         <!-- trend section actual content -->
         <!-- will have a ranking table then a bunch of cards -->

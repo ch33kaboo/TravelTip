@@ -8,3 +8,8 @@
 :target {
   scroll-margin-top: 100px;
 }
+
+.shady-borders {
+  /* this one is to give shady borders in order to appear more in light theme, you just need to define x and y offset in the element itself,  and also you shoulg give the parent absolute and group classes*/
+  @apply absolute bg-gray-900 blur-lg -z-10 opacity-80 group-hover:opacity-100 transition-all duration-150
+}
