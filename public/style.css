@@ -2445,30 +2445,6 @@ body[dir="rtl"] .checkbox:checked,
   top: 50%;
 }
 
-.left-3{
-  left: 0.75rem;
-}
-
-.left-7{
-  left: 1.75rem;
-}
-
-.left-10{
-  left: 2.5rem;
-}
-
-.left-24{
-  left: 6rem;
-}
-
-.left-0{
-  left: 0px;
-}
-
-.left-4{
-  left: 1rem;
-}
-
 .z-20{
   z-index: 20;
 }
@@ -2629,20 +2605,12 @@ body[dir="rtl"] .checkbox:checked,
   width: 83.333333%;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
-.w-1\/5{
-  width: 20%;
+.w-4\/6{
+  width: 66.666667%;
 }
 
 .w-96{
   width: 24rem;
-}
-
-.w-4\/6{
-  width: 66.666667%;
 }
 
 .max-w-sm{
@@ -2753,16 +2721,16 @@ body[dir="rtl"] .checkbox:checked,
   gap: 0.5rem;
 }
 
+.gap-9{
+  gap: 2.25rem;
+}
+
 .gap-5{
   gap: 1.25rem;
 }
 
 .gap-4{
   gap: 1rem;
-}
-
-.gap-9{
-  gap: 2.25rem;
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]){
