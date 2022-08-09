@@ -15,11 +15,15 @@
 }
 
 .city-card {
-  @apply flex gap-16 items-stretch pr-4 border border-gray-800 dark:border-gray-200 rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-900 shadow-lg hover:shadow-xl transition-all duration-75 ease-in
+  @apply flex flex-col md:flex-row gap-8 md:gap-12 items-center md:items-stretch md:pr-4 border border-gray-800 dark:border-gray-200 rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-900 shadow-lg hover:shadow-xl transition-all duration-75 ease-in
 }
 
 .scale-85 {
   --tw-scale-x: .85;
   --tw-scale-y: .85;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.card-image {
+  @apply h-96 md:h-full lg:max-h-96 w-full md:w-96 object-cover
 }
