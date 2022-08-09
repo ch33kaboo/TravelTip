@@ -17,3 +17,9 @@
 .city-card {
   @apply flex gap-16 items-stretch pr-4 border border-gray-800 dark:border-gray-200 rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-900 shadow-lg hover:shadow-xl transition-all duration-75 ease-in
 }
+
+.scale-85 {
+  --tw-scale-x: .85;
+  --tw-scale-y: .85;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
