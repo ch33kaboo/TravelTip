@@ -2370,6 +2370,10 @@ body[dir="rtl"] .checkbox:checked,
   border-bottom-right-radius: var(--rounded-box, 1rem);
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -2410,12 +2414,12 @@ body[dir="rtl"] .checkbox:checked,
   right: 1.75rem;
 }
 
-.bottom-0{
-  bottom: 0px;
-}
-
 .top-0{
   top: 0px;
+}
+
+.bottom-0{
+  bottom: 0px;
 }
 
 .left-3{
@@ -2513,6 +2517,10 @@ body[dir="rtl"] .checkbox:checked,
   margin-top: -3.5rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
 .inline{
   display: inline;
 }
@@ -2545,12 +2553,12 @@ body[dir="rtl"] .checkbox:checked,
   height: 1.5rem;
 }
 
-.h-96{
-  height: 24rem;
-}
-
 .h-20{
   height: 5rem;
+}
+
+.h-96{
+  height: 24rem;
 }
 
 .max-h-14{
@@ -2770,14 +2778,14 @@ body[dir="rtl"] .checkbox:checked,
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
-.bg-gray-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
 .bg-slate-500{
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-gray-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .bg-gray-200{
@@ -2795,16 +2803,16 @@ body[dir="rtl"] .checkbox:checked,
   background-color: hsl(var(--p) / var(--tw-bg-opacity));
 }
 
+.bg-opacity-50{
+  --tw-bg-opacity: 0.5;
+}
+
 .bg-opacity-30{
   --tw-bg-opacity: 0.3;
 }
 
 .bg-opacity-60{
   --tw-bg-opacity: 0.6;
-}
-
-.bg-opacity-50{
-  --tw-bg-opacity: 0.5;
 }
 
 .bg-gradient-to-t{
@@ -2854,16 +2862,16 @@ body[dir="rtl"] .checkbox:checked,
   background-repeat: no-repeat;
 }
 
-.fill-gray-300{
-  fill: #d1d5db;
-}
-
 .fill-current{
   fill: currentColor;
 }
 
 .fill-gray-200{
   fill: #e5e7eb;
+}
+
+.fill-gray-300{
+  fill: #d1d5db;
 }
 
 .fill-primary{
@@ -2934,6 +2942,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .pl-2{
   padding-left: 0.5rem;
+}
+
+.pt-20{
+  padding-top: 5rem;
 }
 
 .text-center{
@@ -3272,12 +3284,12 @@ body[dir="rtl"] .checkbox:checked,
   --tw-bg-opacity: 0.5;
 }
 
-.dark .dark\:fill-gray-800{
-  fill: #1f2937;
-}
-
 .dark .dark\:fill-gray-700{
   fill: #374151;
+}
+
+.dark .dark\:fill-gray-800{
+  fill: #1f2937;
 }
 
 .dark .dark\:text-gray-200{

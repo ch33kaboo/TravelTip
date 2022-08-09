@@ -51,7 +51,7 @@
 
 
     <!-- now I'll put the header -->
-    <header class="flex justify-between items-center py-2 sm:pb-3 sm:pt-2 pl-5 pr-4 sm:pr-10 sticky top-0 z-20 backdrop-blur-md border-b border-gray-500 dark:border-gray-700 bg-slate-500 dark:bg-slate-700 bg-opacity-50 dark:bg-opacity-50">
+    <header class="flex justify-between items-center py-2 sm:pb-3 sm:pt-2 pl-5 pr-4 sm:pr-10 fixed w-full top-0 z-20 backdrop-blur-md border-b border-gray-500 dark:border-gray-700 bg-slate-500 dark:bg-slate-700 bg-opacity-50 dark:bg-opacity-50">
 
       <div
         class="flex cursor-pointer select-none items-center justify-between gap-7"
@@ -229,12 +229,12 @@
         ></path>
       </svg>
       <!-- gonna add this just to make a space of header, but i dont want it to appear actually -->
-      <header class="h-20">
+      <header class="h-20 hidden">
         <svg id="sun-icon"></svg>
         <svg id="moon-icon"></svg>
       </header>
 
-      <section id="hero" class="flex justify-around items-center text-3xl font-bold text-center pr-10 text-gray-200 drop-shadow-xl select-none pb-60">
+      <section id="hero" class="flex justify-around items-center text-3xl font-bold text-center pr-10 text-gray-200 drop-shadow-xl select-none pt-20 pb-60">
         <!-- logo part -->
         <div data-aos="fade-right" data-aos-delay="1150">
           <img
