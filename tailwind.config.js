@@ -8,6 +8,9 @@ module.exports = {
         recursive: ["Marck Script"],
         cool: ["Carter One"],
       },
+      scale: {
+        102: '1.02'
+      },
       animation: {
         shake: "shake 1s 2",
       },
