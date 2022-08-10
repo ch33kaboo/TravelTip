@@ -3209,10 +3209,6 @@ body[dir="rtl"] .checkbox:checked,
   transition-duration: 200ms;
 }
 
-.duration-700{
-  transition-duration: 700ms;
-}
-
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -3394,10 +3390,6 @@ body[dir="rtl"] .checkbox:checked,
   right: -0.5rem;
   bottom: -0.5rem;
   left: -0.5rem;
-}
-
-.group:hover .group-hover\:block{
-  display: block;
 }
 
 .group:hover .group-hover\:stroke-gray-200{
@@ -3647,6 +3639,11 @@ body[dir="rtl"] .checkbox:checked,
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
