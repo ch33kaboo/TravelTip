@@ -3134,6 +3134,10 @@ body[dir="rtl"] .checkbox:checked,
           text-decoration-line: underline;
 }
 
+.opacity-0{
+  opacity: 0;
+}
+
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -3203,6 +3207,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .duration-200{
   transition-duration: 200ms;
+}
+
+.duration-700{
+  transition-duration: 700ms;
 }
 
 .ease-in{
@@ -3394,6 +3402,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .group:hover .group-hover\:stroke-gray-200{
   stroke: #e5e7eb;
+}
+
+.group:hover .group-hover\:opacity-100{
+  opacity: 1;
 }
 
 .dark .dark\:border-gray-700{
