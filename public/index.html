@@ -23,7 +23,7 @@
 
     <!-- first I'll make a modal button to contact the developper (ME) -->
     <!-- this is the modal button -->
-    <label for="my-modal" class="modal-button btn btn-square bg-slate-100 absolute bottom-6 right-7 w-16 h-16 group shadow-md"><svg class="w-10 stroke-slate-800 group-hover:stroke-gray-200 h-10 transition-all drop-shadow-md" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></label>
+    <label for="my-modal" class="modal-button btn btn-square bg-slate-100 absolute bottom-6 left-7 w-16 h-16 group shadow-md"><svg class="w-10 stroke-slate-800 group-hover:stroke-gray-200 h-10 transition-all drop-shadow-md" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></label>
     <!-- this is the modal itself -->
     <input type="checkbox" id="my-modal" class="modal-toggle" />
     <div class="modal">
@@ -1274,6 +1274,23 @@
       ></path>
     </svg>
 
+        <!-- now I'll make scroll to top button -->
+        <div id="btn-back-to-top" class="inline-block p-3 bg-cyan-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-cyan-700 hover:shadow-lg focus:bg-cyan-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-cyan-800 active:shadow-lg transition duration-300 ease-in-out bottom-3 right-3 md:bottom-7 md:right-7 fixed opacity-0 z-20">  <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          class="w-4 h-4"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="currentColor"
+            d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+          ></path>
+        </svg>
+      </div>
+    
     <footer
       id="footer"
       class="footer footer-center bg-primary p-10 text-primary-content"
@@ -1308,7 +1325,7 @@
               <path
                 d="M19.5 12.572l-7.5 7.428-7.5-7.428m0 0a5 5 0 1 1 7.5-6.566 5 5 0 1 1 7.5 6.572"
               ></path></svg></span>
-          by ch33kaboo.
+          by <span class="cursor-pointer hover:underline" id="ch33kaboo">ch33kaboo.</span>
         </p>
       </div>
       <div>
