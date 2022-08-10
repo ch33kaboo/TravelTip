@@ -2492,6 +2492,16 @@ body[dir="rtl"] .checkbox:checked,
   margin-right: 1rem;
 }
 
+.-my-5{
+  margin-top: -1.25rem;
+  margin-bottom: -1.25rem;
+}
+
+.-my-4{
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
 .-mb-2{
   margin-bottom: -0.5rem;
 }
@@ -2538,6 +2548,22 @@ body[dir="rtl"] .checkbox:checked,
 
 .-mt-14{
   margin-top: -3.5rem;
+}
+
+.-mb-3{
+  margin-bottom: -0.75rem;
+}
+
+.-mb-5{
+  margin-bottom: -1.25rem;
+}
+
+.-mb-1{
+  margin-bottom: -0.25rem;
+}
+
+.-mb-4{
+  margin-bottom: -1rem;
 }
 
 .inline{
@@ -2626,6 +2652,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .w-4\/6{
   width: 66.666667%;
+}
+
+.w-60{
+  width: 15rem;
 }
 
 .max-w-sm{
@@ -3009,6 +3039,18 @@ body[dir="rtl"] .checkbox:checked,
   padding-left: 0.5rem;
 }
 
+.pb-28{
+  padding-bottom: 7rem;
+}
+
+.pb-24{
+  padding-bottom: 6rem;
+}
+
+.pb-20{
+  padding-bottom: 5rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -3063,6 +3105,11 @@ body[dir="rtl"] .checkbox:checked,
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold{
@@ -3473,6 +3520,10 @@ body[dir="rtl"] .checkbox:checked,
   .sm\:pt-11{
     padding-top: 2.75rem;
   }
+
+  .sm\:pb-36{
+    padding-bottom: 9rem;
+  }
 }
 
 @media (min-width: 768px){
@@ -3504,6 +3555,11 @@ body[dir="rtl"] .checkbox:checked,
     margin-bottom: 2rem;
   }
 
+  .md\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .md\:mt-0{
     margin-top: 0px;
   }
@@ -3518,6 +3574,10 @@ body[dir="rtl"] .checkbox:checked,
 
   .md\:ml-5{
     margin-left: 1.25rem;
+  }
+
+  .md\:mb-0{
+    margin-bottom: 0px;
   }
 
   .md\:flex{
@@ -3579,6 +3639,11 @@ body[dir="rtl"] .checkbox:checked,
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
