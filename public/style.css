@@ -2457,6 +2457,11 @@ body[dir="rtl"] .checkbox:checked,
   z-index: 10;
 }
 
+.-my-4{
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
 .mx-0{
   margin-left: 0px;
   margin-right: 0px;
@@ -2492,16 +2497,6 @@ body[dir="rtl"] .checkbox:checked,
   margin-right: 1rem;
 }
 
-.-my-5{
-  margin-top: -1.25rem;
-  margin-bottom: -1.25rem;
-}
-
-.-my-4{
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-}
-
 .-mb-2{
   margin-bottom: -0.5rem;
 }
@@ -2526,6 +2521,10 @@ body[dir="rtl"] .checkbox:checked,
   margin-top: 0.75rem;
 }
 
+.-mb-4{
+  margin-bottom: -1rem;
+}
+
 .mb-16{
   margin-bottom: 4rem;
 }
@@ -2548,22 +2547,6 @@ body[dir="rtl"] .checkbox:checked,
 
 .-mt-14{
   margin-top: -3.5rem;
-}
-
-.-mb-3{
-  margin-bottom: -0.75rem;
-}
-
-.-mb-5{
-  margin-bottom: -1.25rem;
-}
-
-.-mb-1{
-  margin-bottom: -0.25rem;
-}
-
-.-mb-4{
-  margin-bottom: -1rem;
 }
 
 .inline{
@@ -2638,8 +2621,8 @@ body[dir="rtl"] .checkbox:checked,
   width: 100vw;
 }
 
-.w-72{
-  width: 18rem;
+.w-60{
+  width: 15rem;
 }
 
 .w-11\/12{
@@ -2652,10 +2635,6 @@ body[dir="rtl"] .checkbox:checked,
 
 .w-4\/6{
   width: 66.666667%;
-}
-
-.w-60{
-  width: 15rem;
 }
 
 .max-w-sm{
@@ -3015,6 +2994,11 @@ body[dir="rtl"] .checkbox:checked,
   padding-bottom: 4rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pt-4{
   padding-top: 1rem;
 }
@@ -3031,24 +3015,12 @@ body[dir="rtl"] .checkbox:checked,
   padding-top: 5rem;
 }
 
-.pb-36{
-  padding-bottom: 9rem;
-}
-
-.pl-2{
-  padding-left: 0.5rem;
-}
-
-.pb-28{
-  padding-bottom: 7rem;
-}
-
 .pb-24{
   padding-bottom: 6rem;
 }
 
-.pb-20{
-  padding-bottom: 5rem;
+.pl-2{
+  padding-left: 0.5rem;
 }
 
 .text-center{
@@ -3077,14 +3049,9 @@ body[dir="rtl"] .checkbox:checked,
   line-height: 2.25rem;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-xl{
@@ -3092,9 +3059,19 @@ body[dir="rtl"] .checkbox:checked,
   line-height: 1.75rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-sm{
@@ -3107,11 +3084,6 @@ body[dir="rtl"] .checkbox:checked,
   line-height: 1.5rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -3122,6 +3094,14 @@ body[dir="rtl"] .checkbox:checked,
 
 .font-medium{
   font-weight: 500;
+}
+
+.font-light{
+  font-weight: 300;
+}
+
+.font-extrabold{
+  font-weight: 800;
 }
 
 .uppercase{
@@ -3517,12 +3497,17 @@ body[dir="rtl"] .checkbox:checked,
     padding-right: 2.5rem;
   }
 
+  .sm\:pb-36{
+    padding-bottom: 9rem;
+  }
+
   .sm\:pt-11{
     padding-top: 2.75rem;
   }
 
-  .sm\:pb-36{
-    padding-bottom: 9rem;
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -3540,6 +3525,11 @@ body[dir="rtl"] .checkbox:checked,
     left: 0px;
   }
 
+  .md\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .md\:mx-8{
     margin-left: 2rem;
     margin-right: 2rem;
@@ -3555,13 +3545,12 @@ body[dir="rtl"] .checkbox:checked,
     margin-bottom: 2rem;
   }
 
-  .md\:my-0{
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
   .md\:mt-0{
     margin-top: 0px;
+  }
+
+  .md\:mb-0{
+    margin-bottom: 0px;
   }
 
   .md\:-mt-20{
@@ -3574,10 +3563,6 @@ body[dir="rtl"] .checkbox:checked,
 
   .md\:ml-5{
     margin-left: 1.25rem;
-  }
-
-  .md\:mb-0{
-    margin-bottom: 0px;
   }
 
   .md\:flex{
@@ -3636,14 +3621,14 @@ body[dir="rtl"] .checkbox:checked,
     text-align: start;
   }
 
-  .md\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
