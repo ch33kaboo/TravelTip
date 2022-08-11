@@ -2405,8 +2405,8 @@ body[dir="rtl"] .checkbox:checked,
   bottom: 1.5rem;
 }
 
-.right-7{
-  right: 1.75rem;
+.left-7{
+  left: 1.75rem;
 }
 
 .top-0{
@@ -2445,28 +2445,8 @@ body[dir="rtl"] .checkbox:checked,
   top: 50%;
 }
 
-.bottom-20{
-  bottom: 5rem;
-}
-
-.right-10{
-  right: 2.5rem;
-}
-
-.bottom-10{
-  bottom: 2.5rem;
-}
-
-.bottom-7{
-  bottom: 1.75rem;
-}
-
 .right-3{
   right: 0.75rem;
-}
-
-.left-7{
-  left: 1.75rem;
 }
 
 .z-20{
@@ -3446,6 +3426,19 @@ body[dir="rtl"] .checkbox:checked,
   background-color: rgb(14 116 144 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-gray-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-opacity-95:hover{
+  --tw-bg-opacity: 0.95;
+}
+
+.hover\:bg-opacity-80:hover{
+  --tw-bg-opacity: 0.8;
+}
+
 .hover\:fill-white:hover{
   fill: #fff;
 }
@@ -3453,6 +3446,16 @@ body[dir="rtl"] .checkbox:checked,
 .hover\:text-cyan-600:hover{
   --tw-text-opacity: 1;
   color: rgb(8 145 178 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-200:hover{
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-800:hover{
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
@@ -3538,6 +3541,10 @@ body[dir="rtl"] .checkbox:checked,
   --tw-bg-opacity: 0.5;
 }
 
+.dark .dark\:bg-opacity-60{
+  --tw-bg-opacity: 0.6;
+}
+
 .dark .dark\:fill-gray-700{
   fill: #374151;
 }
@@ -3559,6 +3566,10 @@ body[dir="rtl"] .checkbox:checked,
 .dark .dark\:text-gray-300{
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.dark .dark\:hover\:bg-opacity-95:hover{
+  --tw-bg-opacity: 0.95;
 }
 
 .dark .dark\:hover\:text-cyan-300:hover{
